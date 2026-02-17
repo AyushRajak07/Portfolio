@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayush Rajak — ECE Engineer & IoT Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── CURSOR ─────────────────────────────────────────────── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ─── NAV ───────────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">AR<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── MOBILE MENU ─────────────────────────────────────── -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ─── HERO ──────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <canvas id="circuit-canvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal"><span class="mono">&lt;</span> ECE Engineer · IoT Builder · AI Tinkerer <span class="mono">/&gt;</span></p>
+      <h1 class="hero-headline reveal">
+        <span class="line">I Build Things</span>
+        <span class="line accent-text">That Think.</span>
+      </h1>
+      <p class="hero-sub reveal">
+        3rd-year ECE student blending embedded hardware with AI intelligence — from Arduino weather stations to award-winning home automation robots. If it has circuits, I'll make it smart.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View Projects <span class="arrow">→</span></a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-label">Internships</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-label">Projects Shipped</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="1">0</span>
+          <span class="stat-label">Award Won</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span class="mono scroll-text">scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT / USP ───────────────────────────────────────── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <p class="section-tag mono">// 01 — About</p>
+          <h2 class="section-title">Hardware instincts.<br><span class="accent-text">Software intelligence.</span></h2>
+          <p class="about-body">
+            I'm Ayush — a 3rd-year Electronics & Communication Engineering student at SISTec, Bhopal with an 8.69 CGPA. I live at the intersection of physical hardware and machine intelligence, building systems that respond to the real world in real time.
+          </p>
+          <p class="about-body">
+            From crafting PCBs to training neural networks, my work bridges the gap between the tangible and the intelligent. I've worked across embedded systems companies in Bengaluru, led college tech initiatives, and built projects that solve real problems — including one that won a national-level prize.
+          </p>
+          <a href="mailto:ajr51407@gmail.com" class="btn btn-outline">Download CV →</a>
+        </div>
+        <div class="about-right">
+          <div class="usp-cards">
+            <div class="usp-card">
+              <div class="usp-icon">⚡</div>
+              <h3>Embedded + AI</h3>
+              <p>Rare skill stack: microcontrollers, IoT protocols, and ML libraries — all in one brain.</p>
+            </div>
+            <div class="usp-card">
+              <div class="usp-icon">🏆</div>
+              <h3>Award-Winning Builder</h3>
+              <p>3rd Prize at Aadhaar Project Expo 2.0 for Brian-AI — an AI-powered home automation robot.</p>
+            </div>
+            <div class="usp-card">
+              <div class="usp-icon">🎙️</div>
+              <h3>Leadership Footprint</h3>
+              <p>VP SISTec, PR Head (E-Cell × IIT Bombay), IETE Secretary, AICTE Campus Ambassador.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ────────────────────────────────────────── -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <p class="section-tag mono">// 02 — Experience</p>
+      <h2 class="section-title">Where I've <span class="accent-text">Shipped.</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item" data-delay="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date mono">Jan 2025 — Feb 2025</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>Embedded Systems Intern</h3>
+              <span class="timeline-company">Emertxe Technologies · Bengaluru</span>
+            </div>
+            <p class="timeline-desc">Worked on real-time embedded systems and microcontroller-driven applications. Designed and shipped a <strong>Home Automation System</strong> on Arduino, enabling smart appliance control — reducing manual interaction by an estimated 70%.</p>
+            <div class="timeline-tags">
+              <span>Arduino</span><span>Embedded C</span><span>Hardware Interfacing</span><span>Real-Time Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date mono">Dec 2024 — Jan 2025</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>Embedded Systems Intern</h3>
+              <span class="timeline-company">COD-TECH IT Solutions · Bengaluru</span>
+            </div>
+            <p class="timeline-desc">Built a full <strong>Weather Monitoring System</strong> using Arduino that reads and displays live temperature & humidity data — gaining hands-on experience with sensor integration and IoT data pipelines.</p>
+            <div class="timeline-tags">
+              <span>Arduino</span><span>Sensor Integration</span><span>IoT</span><span>DHT11/22</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date mono">Oct 2024 — Dec 2024</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <h3>Content Writing Intern</h3>
+              <span class="timeline-company">HK Technicals · Haryana</span>
+            </div>
+            <p class="timeline-desc">Created <strong>SEO-optimised, ATS-friendly technical blogs</strong> driving measurable organic visibility growth. Managed WordPress publishing pipeline and social media strategy for a technical audience.</p>
+            <div class="timeline-tags">
+              <span>SEO Content</span><span>WordPress</span><span>Technical Writing</span><span>Social Media</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ────────────────────────────────────────────── -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <p class="section-tag mono">// 03 — Skills</p>
+      <h2 class="section-title">My <span class="accent-text">Tech Stack.</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title mono">Core Expertise</h3>
+          <div class="skill-tags">
+            <span class="skill-tag core">C / C++</span>
+            <span class="skill-tag core">Python</span>
+            <span class="skill-tag core">Arduino</span>
+            <span class="skill-tag core">Raspberry Pi</span>
+            <span class="skill-tag core">ESP32 / ESP8266</span>
+            <span class="skill-tag core">8051 MCU</span>
+            <span class="skill-tag core">Embedded C</span>
+            <span class="skill-tag core">PCB Design</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title mono">IoT & Protocols</h3>
+          <div class="skill-tags">
+            <span class="skill-tag iot">MQTT</span>
+            <span class="skill-tag iot">HTTP</span>
+            <span class="skill-tag iot">I2C</span>
+            <span class="skill-tag iot">SPI</span>
+            <span class="skill-tag iot">UART</span>
+            <span class="skill-tag iot">IoT Cloud</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title mono">AI / ML</h3>
+          <div class="skill-tags">
+            <span class="skill-tag ai">TensorFlow</span>
+            <span class="skill-tag ai">OpenCV</span>
+            <span class="skill-tag ai">NumPy</span>
+            <span class="skill-tag ai">Pandas</span>
+            <span class="skill-tag ai">NLP</span>
+            <span class="skill-tag ai">OpenAI API</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title mono">EDA & HDL</h3>
+          <div class="skill-tags">
+            <span class="skill-tag eda">KiCAD</span>
+            <span class="skill-tag eda">EasyEDA</span>
+            <span class="skill-tag eda">Xilinx</span>
+            <span class="skill-tag eda">Verilog</span>
+            <span class="skill-tag eda">MATLAB</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title mono">Tools & IDEs</h3>
+          <div class="skill-tags">
+            <span class="skill-tag tools">Git / GitHub</span>
+            <span class="skill-tag tools">VS Code</span>
+            <span class="skill-tag tools">Arduino IDE</span>
+            <span class="skill-tag tools">Power BI</span>
+            <span class="skill-tag tools">Google Analytics</span>
+            <span class="skill-tag tools">Canva</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title mono">Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag soft">Communication</span>
+            <span class="skill-tag soft">Team Management</span>
+            <span class="skill-tag soft">Problem Solving</span>
+            <span class="skill-tag soft">Public Speaking</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ──────────────────────────────────────────── -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <p class="section-tag mono">// 04 — Projects</p>
+      <h2 class="section-title">Things I've <span class="accent-text">Built.</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-badge">🏆 Award Winner</div>
+          <div class="project-header">
+            <div class="project-number mono">01</div>
+            <div class="project-links">
+              <a href="https://github.com/AyushRajak07" target="_blank" aria-label="GitHub" class="project-link">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" aria-label="Live Demo" class="project-link">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Brian-AI</h3>
+          <p class="project-subtitle mono">AI-Powered Home Automation Robot</p>
+          <div class="project-problem">
+            <span class="problem-label">Problem →</span> Home automation systems are either expensive proprietary products or clunky manual setups — lacking intelligence.
+          </div>
+          <div class="project-solution">
+            <span class="solution-label">Solution →</span> Built an open, voice-controlled AI robot using Python + Arduino + IoT that handles appliance control, security surveillance, and desktop integration in one unified system.
+          </div>
+          <div class="project-tech">
+            <span>Python</span><span>Arduino</span><span>IoT</span><span>Voice Recognition</span><span>OpenCV</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-number mono">02</div>
+            <div class="project-links">
+              <a href="https://github.com/AyushRajak07" target="_blank" aria-label="GitHub" class="project-link">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" aria-label="Live Demo" class="project-link">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Law-GPT</h3>
+          <p class="project-subtitle mono">AI Legal Assistance Chatbot</p>
+          <div class="project-problem">
+            <span class="problem-label">Problem →</span> Legal guidance in India is inaccessible to most citizens due to cost and language barriers.
+          </div>
+          <div class="project-solution">
+            <span class="solution-label">Solution →</span> Built an NLP-powered chatbot using OpenAI API that provides real-time, plain-language answers to queries about Indian law.
+          </div>
+          <div class="project-tech">
+            <span>Python</span><span>NLP</span><span>OpenAI API</span><span>Chatbot</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-number mono">03</div>
+            <div class="project-links">
+              <a href="https://github.com/AyushRajak07" target="_blank" aria-label="GitHub" class="project-link">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" aria-label="Live Demo" class="project-link">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Smart Fencing</h3>
+          <p class="project-subtitle mono">AI Wildlife Protection System</p>
+          <div class="project-problem">
+            <span class="problem-label">Problem →</span> High-voltage electric fences meant for livestock protection kill wildlife and are not selective or intelligent.
+          </div>
+          <div class="project-solution">
+            <span class="solution-label">Solution →</span> Designed an ESP32-based AI fencing system that distinguishes wildlife from unauthorized intrusions, preventing animal electrocution.
+          </div>
+          <div class="project-tech">
+            <span>ESP32</span><span>AI</span><span>IoT</span><span>Sensor Fusion</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ACHIEVEMENTS ──────────────────────────────────────── -->
+  <section class="achievements section">
+    <div class="container">
+      <p class="section-tag mono">// 05 — Recognition</p>
+      <h2 class="section-title">Beyond the <span class="accent-text">Code.</span></h2>
+      <div class="ach-grid">
+        <div class="ach-item">
+          <span class="ach-icon">🏆</span>
+          <div>
+            <strong>3rd Prize</strong>
+            <p>Aadhaar Project Expo 2.0 — Brain-AI Home Automation Robot</p>
+          </div>
+        </div>
+        <div class="ach-item">
+          <span class="ach-icon">🎙️</span>
+          <div>
+            <strong>Anchor & Host</strong>
+            <p>Cultural & Technical Fests at SISTec</p>
+          </div>
+        </div>
+        <div class="ach-item">
+          <span class="ach-icon">💡</span>
+          <div>
+            <strong>Core IT Member</strong>
+            <p>ElectroPulse Club, SISTec</p>
+          </div>
+        </div>
+        <div class="ach-item">
+          <span class="ach-icon">🇮🇳</span>
+          <div>
+            <strong>National Shortlist</strong>
+            <p>Viksit Bharat Young Leaders Dialogue 2022–23</p>
+          </div>
+        </div>
+        <div class="ach-item">
+          <span class="ach-icon">🚀</span>
+          <div>
+            <strong>VP — SISTec 2025–26</strong>
+            <p>Vice President of the college student body</p>
+          </div>
+        </div>
+        <div class="ach-item">
+          <span class="ach-icon">🤝</span>
+          <div>
+            <strong>PR Head</strong>
+            <p>E-Cell SISTec × IIT Bombay</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────────── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <p class="section-tag mono">// 06 — Contact</p>
+      <h2 class="section-title">Let's <span class="accent-text">Build Together.</span></h2>
+      <p class="contact-sub">Got a project, internship, or collab in mind? I'm always open to conversations about embedded systems, AI, and hardware hacks.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:ajr51407@gmail.com" class="contact-link">
+            <span class="contact-icon">✉</span>
+            <div>
+              <span class="contact-label mono">Email</span>
+              <span class="contact-value">ajr51407@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+919575898647" class="contact-link">
+            <span class="contact-icon">📱</span>
+            <div>
+              <span class="contact-label mono">Phone</span>
+              <span class="contact-value">+91 9575898647</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/ayush-r-67242b2a3" target="_blank" class="contact-link">
+            <span class="contact-icon">💼</span>
+            <div>
+              <span class="contact-label mono">LinkedIn</span>
+              <span class="contact-value">ayush-r-67242b2a3</span>
+            </div>
+          </a>
+          <a href="https://github.com/AyushRajak07" target="_blank" class="contact-link">
+            <span class="contact-icon">🐙</span>
+            <div>
+              <span class="contact-label mono">GitHub</span>
+              <span class="contact-value">AyushRajak07</span>
+            </div>
+          </a>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label mono">Name *</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" autocomplete="name" />
+            <span class="form-error" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label mono">Email *</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" autocomplete="email" />
+            <span class="form-error" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label mono">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="Internship / Collaboration / Project" />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label mono">Message *</label>
+            <textarea id="message" name="message" class="form-input form-textarea" rows="4" placeholder="Tell me about your idea..."></textarea>
+            <span class="form-error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-sending" style="display:none">Sending…</span>
+            <span class="arrow">→</span>
+          </button>
+          <div class="form-success" id="form-success">
+            ✅ Message received! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="mono footer-copy">© 2026 Ayush Rajak. Built with ❤️ &amp; curiosity.</span>
+      <div class="footer-links">
+        <a href="https://github.com/AyushRajak07" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/ayush-r-67242b2a3" target="_blank">LinkedIn</a>
+        <a href="mailto:ajr51407@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
